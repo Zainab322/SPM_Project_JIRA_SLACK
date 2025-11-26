@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - ElegantJewels</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .thank-you-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(45, 45, 45, 0.7)), url('assets/images/silk-fabric-bg.jpg') center/cover;
+            padding: 50px 20px;
+        }
+        
+        .thank-you-content {
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 70px 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+        }
+        
+        .thank-you-icon {
+            font-size: 5rem;
+            color: #D4AF37;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        .thank-you-content h1 {
+            font-size: 3rem;
+            margin-bottom: 25px;
+            color: #D4AF37;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+        
+        .thank-you-content p {
+            font-size: 1.3rem;
+            margin-bottom: 35px;
+            color: #F5F5F5;
+            line-height: 1.7;
+        }
+        
+        .confirmation-details {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            text-align: center;
+        }
+        
+        .confirmation-details p {
+            margin: 8px 0;
+            color: #D4AF37;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .next-steps {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 35px 30px;
+            border-radius: 15px;
+            margin: 35px 0;
+            text-align: left;
+            border-left: 5px solid #D4AF37;
+        }
+        
+        .next-steps h3 {
+            color: #D4AF37;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        
+        .next-steps ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .next-steps li {
+            margin: 15px 0;
+            padding-left: 35px;
+            position: relative;
+            color: #F5F5F5;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .next-steps li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #D4AF37;
+            font-weight: bold;
+            font-size: 1.4rem;
+        }
+        
+        .contact-urgent {
+            background: rgba(212, 175, 55, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+        }
+        
+        .contact-urgent p {
+            margin: 5px 0;
+            color: #F4E4A6;
+            font-size: 1.2rem;
+        }
+        
+        .contact-urgent strong {
+            color: #D4AF37;
+            font-size: 1.3rem;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .btn-large {
+            padding: 16px 35px;
+            font-size: 1.1rem;
+        }
+        
+        .success-message {
+            background: rgba(212, 175, 55, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid #D4AF37;
+        }
+        
+        .success-message p {
+            color: #F4E4A6;
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .thank-you-content {
+                padding: 50px 30px;
+                margin: 20px;
+            }
+            
+            .thank-you-content h1 {
+                font-size: 2.3rem;
+            }
+            
+            .thank-you-content p {
+                font-size: 1.1rem;
+            }
+            
+            .action-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-large {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .thank-you-content {
+                padding: 40px 25px;
+            }
+            
+            .thank-you-content h1 {
+                font-size: 2rem;
+            }
+            
+            .next-steps {
+                padding: 25px 20px;
+            }
+            
+            .next-steps li {
+                font-size: 1rem;
+                padding-left: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">ElegantJewels</div>
+        <ul class="nav-links">
+            <li><a href="index.php#video-gallery">Collections</a></li>
+            <li><a href="index.php#pricing">Pricing</a></li>
+            <li><a href="index.php#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="thank-you-section">
+    <div class="thank-you-content">
+        <div class="thank-you-icon">
+            <i class="fas fa-gem"></i>
+        </div>
+        
+        <div class="success-message">
+            <p><i class="fas fa-check-circle"></i> Form successfully submitted!</p>
+        </div>
+        
+        <h1>Thank You for Your Inquiry!</h1>
+        
+        <p>Your consultation request has been successfully submitted. We're excited to help you find the perfect piece of jewelry that tells your unique story.</p>
+        
+        <div class="confirmation-details">
+            <p><i class="fas fa-envelope"></i> Confirmation has been sent to your email</p>
+            <p><i class="fas fa-clock"></i> Submitted: <span id="submission-time"></span></p>
+        </div>
+        
+        <div class="next-steps">
+            <h3>What to Expect Next</h3>
+            <ul>
+                <li>Our jewelry expert will contact you within <strong>24 hours</strong> via your preferred method</li>
+                <li>We'll discuss your preferences, occasion, and budget requirements</li>
+                <li>Schedule a private viewing at our boutique or virtual consultation</li>
+                <li>Receive personalized recommendations from our exclusive collections</li>
+                <li>Get answers to all your questions about craftsmanship and materials</li>
+            </ul>
+        </div>
+        
+        <div class="contact-urgent">
+            <p><strong>For immediate assistance:</strong></p>
+            <p><i class="fas fa-phone"></i> Call us at +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> Email: consultation@elegantjewels.com</p>
+        </div>
+        
+        <div class="action-buttons">
+            <a href="index.php" class="btn btn-large">Return to Homepage</a>
+            <a href="index.php#contact" class="btn btn-large btn-outline">Send Another Message</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 ElegantJewels. Crafting Timeless Beauty Since 1995. All rights reserved.</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i> Instagram</a> |
+            <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a> |
+            <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('submission-time').textContent = new Date().toLocaleString();
+</script>
+
+</body>
+</html>
